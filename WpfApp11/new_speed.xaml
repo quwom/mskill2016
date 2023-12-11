@@ -1,0 +1,22 @@
+﻿<Page x:Class="WpfApp11.new_speed"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:WpfApp11"
+      mc:Ignorable="d" 
+      d:DesignHeight="450" d:DesignWidth="800"
+      Title="new_speed">
+
+    <Grid Background="White">
+        <Grid.RowDefinitions>
+            <RowDefinition/>
+            <RowDefinition Height="85"/>
+            <RowDefinition Height="85"/>
+            <RowDefinition/>
+        </Grid.RowDefinitions>
+        <Button Click="a_Click" Grid.Row="1" Content="Я участвовал ранее" Width="250" Height="70"/>
+        <Button Click="b_Click" Grid.Row="2" Content="Я новый участник" Width="250" Height="70"/>
+        <Button Grid.Row="4" HorizontalAlignment="Right" VerticalAlignment="Bottom" Margin="10" Content="Логин"  Width="100" Height="50"/>
+    </Grid>
+</Page>

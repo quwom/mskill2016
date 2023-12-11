@@ -1,0 +1,62 @@
+﻿<Page x:Class="WpfApp11.my_sponsors"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:WpfApp11"
+      mc:Ignorable="d" 
+      d:DesignHeight="450" d:DesignWidth="800"
+      Title="my_sponsors">
+
+    <Grid Background="White">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="50"/>
+            <RowDefinition Height="50"/>
+            <RowDefinition/>
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition/>
+            <ColumnDefinition/>
+        </Grid.ColumnDefinitions>
+        <TextBlock Grid.ColumnSpan="2" FontSize="20" Text="Мои спонсоры"/>
+        <TextBlock Grid.ColumnSpan="2" Grid.Row="1" FontSize="20" Text="Здесь показаны все ваши спонсоры в Marathon Skills 2016."/>
+        <StackPanel Grid.Row="2">
+            <TextBlock FontSize="20" Text="Наименование благотворительной организации"/>
+            <Image Source="ball.png" Height="130" Width="130" Margin="10"/>
+            <TextBlock TextAlignment="Left" Margin="10 0 0 0" FontSize="18" Text="Это было бы длинным описанием благотворительности. Это могло пойти для нескольких параграфов."/>
+            <TextBlock TextAlignment="Left" Margin="10 0 0 0" FontSize="18" Text="Это - больше описания здесь, и это - еще часть описания также."/>
+        </StackPanel>
+        <StackPanel Grid.Row="2" Grid.Column="1">
+            <Grid Height="300">
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="20"/>
+                    <RowDefinition Height="35"/>
+                    <RowDefinition Height="35"/>
+                    <RowDefinition Height="35"/>
+                    <RowDefinition Height="35"/>
+                    <RowDefinition Height="35"/>
+                    <RowDefinition Height="35"/>
+                    <RowDefinition/>
+                </Grid.RowDefinitions>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition/>
+                    <ColumnDefinition/>
+                </Grid.ColumnDefinitions>
+                <TextBlock Foreground="Gray" Text="Спонсор"/>
+                <TextBlock Foreground="Gray" Grid.Column="1" Text="Взнос"/>
+                <TextBlock Grid.Row="1" Text="Наименование"/>
+                <TextBlock Grid.Row="2" Text="Наименование"/>
+                <TextBlock Grid.Row="3" Text="Наименование"/>
+                <TextBlock Grid.Row="4" Text="Наименование"/>
+                <TextBlock Grid.Row="5" Text="Наименование"/>
+                <TextBlock Margin="0 0 10 0" Grid.Row="1" Grid.Column="1" Text="$50" HorizontalAlignment="Right"/>
+                <TextBlock Margin="0 0 10 0" Grid.Row="2" Grid.Column="1" Text="$120" HorizontalAlignment="Right"/>
+                <TextBlock Margin="0 0 10 0" Grid.Row="3" Grid.Column="1" Text="$180" HorizontalAlignment="Right"/>
+                <TextBlock Margin="0 0 10 0" Grid.Row="4" Grid.Column="1" Text="$30" HorizontalAlignment="Right"/>
+                <TextBlock Margin="0 0 10 0" Grid.Row="5" Grid.Column="1" Text="$300" HorizontalAlignment="Right"/>
+                <Line Grid.Row="6" Grid.ColumnSpan="2" Stroke="Gray" X1="50" X2="390"/>
+                <TextBlock Foreground="Gray" Margin="0 0 10 0" Grid.Row="6" FontSize="20" Grid.Column="1" Text="Всего $680" HorizontalAlignment="Right"/>
+            </Grid>
+        </StackPanel>
+    </Grid>
+</Page>

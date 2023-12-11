@@ -1,0 +1,73 @@
+﻿<Page x:Class="WpfApp11.sponsor"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:WpfApp11"
+      mc:Ignorable="d" 
+      d:DesignHeight="450" d:DesignWidth="800"
+      Title="sponsor">
+
+    <Grid Background="White">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="30"/>
+            <RowDefinition Height="50"/>
+            <RowDefinition Height="165"/>
+            <RowDefinition Height="165"/>
+            <RowDefinition/>
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition/>
+            <ColumnDefinition/>
+        </Grid.ColumnDefinitions>
+        <TextBlock Grid.ColumnSpan="2" VerticalAlignment="Center" FontSize="20">Регистрация на марафон</TextBlock>
+        <TextBlock  FontSize="15" Grid.Row="1" Grid.ColumnSpan="2">Пожалуйста заполните всю информацию, чтобы зарегистрироваться на Skills Marathon 2016 проводимом в Москве. Russia. С вами свяжутся после регистрации для уточнения оплаты и другой информации.</TextBlock>
+        <StackPanel HorizontalAlignment="Center" Grid.Row="2">
+            <TextBlock Foreground="DarkGray" Margin="10" HorizontalAlignment="Center" FontSize="25">Вид марафона</TextBlock>
+            <CheckBox Margin="10" Content="42km Полный марафон($145)"/>
+            <CheckBox Margin="10" Content="21km Полумарафон ($75)"/>
+            <CheckBox Margin="10" Content="5km Малая дистанция ($20)"/>
+        </StackPanel>
+
+        <StackPanel Grid.Row="2" Grid.Column="1"  >
+            <TextBlock Foreground="DarkGray" HorizontalAlignment="Center" FontSize="25" Margin="10">Варианты комплектов</TextBlock>
+            <RadioButton  GroupName="v" HorizontalAlignment="Center" FontSize="14">
+                <RadioButton.Content >
+                    <TextBlock Width="220"><Bold>Вариант A ($0):</Bold> Номер бегуна + RFID браслет.</TextBlock>
+                </RadioButton.Content>
+            </RadioButton>
+            <RadioButton  GroupName="v" HorizontalAlignment="Center" FontSize="14">
+                <RadioButton.Content >
+                    <TextBlock Width="220"><Bold>Вариант B ($20):</Bold> вариант A + бейсболка + бутылка воды.</TextBlock>
+                </RadioButton.Content>
+            </RadioButton>
+            <RadioButton GroupName="v" HorizontalAlignment="Center" FontSize="14">
+                <RadioButton.Content >
+                    <TextBlock Width="220"><Bold>Вариант C ($45): ($0):</Bold>Вариант B+футболка + сувенирный буклет.</TextBlock>
+                </RadioButton.Content>
+            </RadioButton>
+        </StackPanel>
+        <StackPanel HorizontalAlignment="Center" VerticalAlignment="Center" Grid.Row="3" Grid.Column="1">
+            <TextBlock Foreground="DarkGray" FontSize="20">Регистрационный взнос</TextBlock>
+            <TextBlock Foreground="DarkGray" FontSize="40" Text="$185"></TextBlock>
+        </StackPanel>
+
+        <StackPanel HorizontalAlignment="Center" VerticalAlignment="Center" Grid.Row="3" Grid.Column="0">
+            <TextBlock Margin="10" Foreground="DarkGray" FontSize="20">Детали спонсорства</TextBlock>
+            <StackPanel Margin="55 0 0 0" HorizontalAlignment="Center"  Orientation="Horizontal">
+                <TextBlock Margin="5" FontSize="15">Взнос</TextBlock>
+                <ComboBox Width="120" VerticalContentAlignment="Center" Height="30" SelectedIndex="0">
+                    <ComboBoxItem Content="Фонд кошек"/>
+                </ComboBox>
+            </StackPanel>
+            <StackPanel Margin="10" HorizontalAlignment="Center"  Orientation="Horizontal">
+                <TextBlock Margin="5" FontSize="15">Сумма взноса</TextBlock>
+                <TextBox VerticalContentAlignment="Center" Width="120">$500</TextBox>
+            </StackPanel>
+            <StackPanel HorizontalAlignment="Center" Orientation="Horizontal">
+                <Button Click="Button_Click" Margin="5" Height="30" Width="80">Регистрация</Button>
+                <Button Click="Button_Click_1" Margin="5" Height="30" Width="60">Отмена</Button>
+            </StackPanel>
+        </StackPanel>
+    </Grid>
+</Page>
